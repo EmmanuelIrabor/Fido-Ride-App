@@ -74,7 +74,7 @@ class PassengerHomeScreen extends StatelessWidget {
                               color: Color(0xFF808080),
                             ),
                             filled: true,
-                            fillColor: const Color(0xFFDCDCDC),
+                            fillColor: const Color(0xFFF5F5F5),
                             contentPadding: const EdgeInsets.symmetric(
                               vertical: 10,
                             ),
@@ -208,13 +208,13 @@ class PassengerHomeScreen extends StatelessWidget {
                         style: TextStyle(
                           color: Color(0xFF8F8F8F),
                           fontWeight: FontWeight.bold,
-                          fontSize: 23,
+                          fontSize: 15,
                         ),
                       ),
                       const SizedBox(width: 6),
                       Icon(
                         PhosphorIcons.circlesThreePlus(PhosphorIconsStyle.fill),
-                        size: 32,
+                        size: 24,
                         color: const Color(0xFF8F8F8F),
                       ),
                     ],

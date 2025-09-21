@@ -12,7 +12,7 @@ class ActivityBottomSheet extends StatelessWidget {
       builder: (context, scrollController) {
         return Container(
           decoration: BoxDecoration(
-            color: Colors.white, // grey sheet color
+            color: Color(0xFFF5F5F5), // grey sheet color
             borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
             border: Border.all(color: Color(0xffdcdcdc), width: 1),
           ),
