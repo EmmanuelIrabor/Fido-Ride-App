@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../pages/Services/services.dart';
+import '../pages/Home/passanger_home.dart';
 
 class NavBar extends StatelessWidget {
   final int currentIndex;
@@ -8,37 +10,43 @@ class NavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: const Color(0xFFDCDCDC),
-      width: double.infinity,
-      child: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        backgroundColor: Colors.white,
-        currentIndex: currentIndex,
-        selectedItemColor: Colors.black,
-        unselectedItemColor: const Color(0xFF808080),
-        elevation: 0,
-        onTap: onTap,
-        items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.apps), // Four-squares icon
-            label: 'Services',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.bookmark_border),
-            label: 'Activity',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person_outline),
-            label: 'Account',
-          ),
-          // BottomNavigationBarItem(
-          //   icon: Icon(Icons.more_horiz), // 5th placeholder if needed
-          //   label: 'More',
-          // ),
-        ],
-      ),
+    return BottomNavigationBar(
+      type: BottomNavigationBarType.fixed,
+      backgroundColor: Colors.white,
+      currentIndex: currentIndex,
+      selectedItemColor: Colors.black,
+      unselectedItemColor: const Color(0xFF808080),
+      elevation: 0,
+      onTap: (index) {
+        onTap(index);
+
+        if (index == 0 && currentIndex != 0) {
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const PassengerHomeScreen(),
+            ),
+          );
+        }
+        if (index == 1 && currentIndex != 1) {
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (context) => const ServicesScreen()),
+          );
+        }
+      },
+      items: const [
+        BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+        BottomNavigationBarItem(icon: Icon(Icons.apps), label: 'Services'),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.bookmark_border),
+          label: 'Activity',
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.person_outline),
+          label: 'Account',
+        ),
+      ],
     );
   }
 }

@@ -88,8 +88,8 @@ class _OtpVerificationPageState extends State<OtpVerificationPage> {
                     selectedFillColor: const Color(0xFFDCDCDC),
                     inactiveFillColor: const Color(0xFFDCDCDC),
                     activeColor: AppColors.main,
-                    selectedColor: Colors.black,
-                    inactiveColor: Colors.black,
+                    selectedColor: AppColors.main,
+                    inactiveColor: const Color.fromARGB(255, 255, 255, 255),
                     fieldOuterPadding: const EdgeInsets.symmetric(
                       horizontal: 10,
                     ),

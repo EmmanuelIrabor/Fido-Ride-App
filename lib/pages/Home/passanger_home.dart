@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 import '../../components/navbar.dart';
 import '../../components/activity_bottom_sheet.dart';
+import '../InterState_Ride/select_location.dart';
 
 class PassengerHomeScreen extends StatelessWidget {
   const PassengerHomeScreen({super.key});
@@ -63,24 +64,34 @@ class PassengerHomeScreen extends StatelessWidget {
                   Row(
                     children: [
                       Expanded(
-                        child: TextField(
-                          decoration: InputDecoration(
-                            hintText: 'Where are you going?',
-                            hintStyle: const TextStyle(
-                              color: Color(0xFF808080),
-                            ),
-                            prefixIcon: const Icon(
-                              Icons.search,
-                              color: Color(0xFF808080),
-                            ),
-                            filled: true,
-                            fillColor: const Color(0xFFF5F5F5),
-                            contentPadding: const EdgeInsets.symmetric(
-                              vertical: 10,
-                            ),
-                            border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(30),
-                              borderSide: BorderSide.none,
+                        child: GestureDetector(
+                          onTap: () {
+                            //  Navigator.push(context,
+                            //   MaterialPageRoute(builder: (_) => SetLocationsPage()));
+                          },
+                          child: AbsorbPointer(
+                            // keeps the field from focusing or bringing up keyboard
+                            child: TextField(
+                              readOnly: true,
+                              decoration: InputDecoration(
+                                hintText: 'Where are you going?',
+                                hintStyle: const TextStyle(
+                                  color: Color(0xFF808080),
+                                ),
+                                prefixIcon: const Icon(
+                                  Icons.search,
+                                  color: Color(0xFF808080),
+                                ),
+                                filled: true,
+                                fillColor: const Color(0xFFF5F5F5),
+                                contentPadding: const EdgeInsets.symmetric(
+                                  vertical: 10,
+                                ),
+                                border: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(30),
+                                  borderSide: BorderSide.none,
+                                ),
+                              ),
                             ),
                           ),
                         ),
@@ -271,7 +282,19 @@ class PassengerHomeScreen extends StatelessWidget {
                           return Padding(
                             padding: const EdgeInsets.only(right: 12),
                             child: GestureDetector(
-                              onTap: () {},
+                              onTap: () {
+                                if (index == 1) {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          const SelectLocationInterState(),
+                                    ),
+                                  );
+                                }
+                                // You can add more navigations for other cards if needed
+                                // else if (index == 0) Navigator.push(...);
+                              },
                               child: Container(
                                 width: 250,
                                 height: 250,
