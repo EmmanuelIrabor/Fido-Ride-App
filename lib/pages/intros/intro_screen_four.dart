@@ -50,7 +50,7 @@ class IntroScreenFour extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 20.0),
               child: Text(
-                "We're always on time",
+                "We’re always on time.Because your time matters as much as your destination.",
                 style: TextStyle(color: Colors.white70, fontSize: 14),
                 textAlign: TextAlign.left,
               ),
@@ -60,7 +60,7 @@ class IntroScreenFour extends StatelessWidget {
             Expanded(
               child: Center(
                 child: Image.asset(
-                  'assets/images/intro_car_four.png',
+                  'assets/images/delivery.png',
                   width: 400,
                   height: 400,
                   fit: BoxFit.contain,

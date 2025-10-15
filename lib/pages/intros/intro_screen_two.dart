@@ -61,7 +61,7 @@ class IntroScreenTwo extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 20.0),
               child: Text(
-                "Comfort and class, every mile",
+                "Comfort and class, every mile.Because every trip should feel like an upgrade, from the moment you step in to the second you arrive.",
                 style: TextStyle(color: Colors.white70, fontSize: 14),
                 textAlign: TextAlign.left,
               ),

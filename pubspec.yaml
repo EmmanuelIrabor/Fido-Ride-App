@@ -78,6 +78,9 @@ flutter:
     - assets/images/card_three.jpg
     - assets/images/card_four.jpg
     - assets/images/Services_lady.png
+    - assets/images/fido_car_straight.png
+    - assets/images/two_buses.png
+    - assets/images/delivery.png
     # - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

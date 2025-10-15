@@ -163,63 +163,75 @@ class ServicesScreen extends StatelessWidget {
                                     ),
                                   ),
                                   const SizedBox(width: 6),
-                                  Icon(
-                                    PhosphorIcons.circlesThreePlus(
-                                      PhosphorIconsStyle.fill,
-                                    ),
-                                    size: 24,
-                                    color: Colors.white,
-                                  ),
+                                  // Icon(
+                                  //   PhosphorIcons.circlesThreePlus(
+                                  //     PhosphorIconsStyle.fill,
+                                  //   ),
+                                  //   size: 24,
+                                  //   color: Colors.white,
+                                  // ),
                                 ],
                               ),
                               const SizedBox(height: 20),
 
                               const Text(
-                                'Explore Fido services at your own pace and convenience',
+                                'Explore Fido services at your own pace \nand convenience',
                                 style: TextStyle(
                                   color: Colors.white70,
                                   fontSize: 12,
                                 ),
                               ),
                               const SizedBox(height: 20),
-                              ElevatedButton(
-                                onPressed: () {},
-                                style: ElevatedButton.styleFrom(
-                                  backgroundColor: Colors.white,
-                                  foregroundColor: Colors.black,
-                                  elevation: 0,
-                                  padding: const EdgeInsets.symmetric(
-                                    horizontal: 10,
-                                    vertical: 6,
-                                  ),
-                                  minimumSize: const Size(80, 30),
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(20),
-                                  ),
-                                ),
-                                child: const Text(
-                                  'Explore',
-                                  style: TextStyle(
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ),
+                              // ElevatedButton(
+                              //   onPressed: () {},
+                              //   style: ElevatedButton.styleFrom(
+                              //     backgroundColor: Colors.white,
+                              //     foregroundColor: Colors.black,
+                              //     elevation: 0,
+                              //     padding: const EdgeInsets.symmetric(
+                              //       horizontal: 10,
+                              //       vertical: 6,
+                              //     ),
+                              //     minimumSize: const Size(80, 30),
+                              //     shape: RoundedRectangleBorder(
+                              //       borderRadius: BorderRadius.circular(20),
+                              //     ),
+                              //   ),
+                              //   child: const Text(
+                              //     'Explore',
+                              //     style: TextStyle(
+                              //       fontSize: 10,
+                              //       fontWeight: FontWeight.bold,
+                              //     ),
+                              //   ),
+                              // ),
                             ],
                           ),
                         ),
                         const SizedBox(width: 5),
-                        Expanded(
-                          flex: 1,
-                          child: Align(
-                            alignment: Alignment.bottomCenter,
-                            child: Image.asset(
-                              'assets/images/Services_lady.png',
-                              height: 150,
-                              fit: BoxFit.contain,
+
+                        Row(
+                          children: [
+                            Icon(
+                              PhosphorIcons.circlesThreePlus(
+                                PhosphorIconsStyle.fill,
+                              ),
+                              size: 24,
+                              color: Colors.white,
                             ),
-                          ),
+                          ],
                         ),
+                        // Expanded(
+                        //   flex: 1,
+                        //   child: Align(
+                        //     alignment: Alignment.bottomCenter,
+                        //     child: Image.asset(
+                        //       'assets/images/Services_lady.png',
+                        //       height: 150,
+                        //       fit: BoxFit.contain,
+                        //     ),
+                        //   ),
+                        // ),
                       ],
                     ),
                   ),
@@ -231,7 +243,7 @@ class ServicesScreen extends StatelessWidget {
 
                   Padding(
                     padding: const EdgeInsets.symmetric(
-                      horizontal: 16.0,
+                      horizontal: 4,
                     ), // Page-level padding
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,

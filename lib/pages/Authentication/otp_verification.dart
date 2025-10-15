@@ -91,7 +91,7 @@ class _OtpVerificationPageState extends State<OtpVerificationPage> {
                     selectedColor: AppColors.main,
                     inactiveColor: const Color.fromARGB(255, 255, 255, 255),
                     fieldOuterPadding: const EdgeInsets.symmetric(
-                      horizontal: 10,
+                      horizontal: 3,
                     ),
                   ),
                   animationDuration: const Duration(milliseconds: 300),

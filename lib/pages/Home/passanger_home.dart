@@ -151,7 +151,7 @@ class PassengerHomeScreen extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               const Text(
-                                'Hi James',
+                                'Hi User',
                                 style: TextStyle(
                                   fontSize: 22,
                                   color: Colors.white,
@@ -160,51 +160,63 @@ class PassengerHomeScreen extends StatelessWidget {
                               ),
                               const SizedBox(height: 10),
                               const Text(
-                                'Explore Fido services at your own pace and convenience',
+                                'Explore Fido services at your own pace \nand convenience',
                                 style: TextStyle(
                                   color: Colors.white70,
                                   fontSize: 10,
                                 ),
                               ),
                               const SizedBox(height: 20),
-                              ElevatedButton(
-                                onPressed: () {},
-                                style: ElevatedButton.styleFrom(
-                                  backgroundColor: Colors.white,
-                                  foregroundColor: Colors.black,
-                                  elevation: 0,
-                                  padding: const EdgeInsets.symmetric(
-                                    horizontal: 10,
-                                    vertical: 6,
-                                  ),
-                                  minimumSize: const Size(80, 30),
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(20),
-                                  ),
-                                ),
-                                child: const Text(
-                                  'Explore',
-                                  style: TextStyle(
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ),
+                              // ElevatedButton(
+                              //   onPressed: () {},
+                              //   style: ElevatedButton.styleFrom(
+                              //     backgroundColor: Colors.white,
+                              //     foregroundColor: Colors.black,
+                              //     elevation: 0,
+                              //     padding: const EdgeInsets.symmetric(
+                              //       horizontal: 10,
+                              //       vertical: 6,
+                              //     ),
+                              //     minimumSize: const Size(80, 30),
+                              //     shape: RoundedRectangleBorder(
+                              //       borderRadius: BorderRadius.circular(20),
+                              //     ),
+                              //   ),
+                              //   child: const Text(
+                              //     'Explore',
+                              //     style: TextStyle(
+                              //       fontSize: 10,
+                              //       fontWeight: FontWeight.bold,
+                              //     ),
+                              //   ),
+                              // ),
                             ],
                           ),
                         ),
                         const SizedBox(width: 5),
-                        Expanded(
-                          flex: 2,
-                          child: Align(
-                            alignment: Alignment.bottomCenter,
-                            child: Image.asset(
-                              'assets/images/hello_car.png',
-                              height: 150,
-                              fit: BoxFit.contain,
+
+                        Row(
+                          children: [
+                            Icon(
+                              PhosphorIcons.arrowsInCardinal(
+                                PhosphorIconsStyle.fill,
+                              ),
+                              size: 24,
+                              color: const Color.fromARGB(255, 255, 255, 255),
                             ),
-                          ),
+                          ],
                         ),
+                        // Expanded(
+                        //   flex: 1,
+                        //   child: Align(
+                        //     alignment: Alignment.bottomCenter,
+                        //     child: Image.asset(
+                        //       'assets/images/hello_car.png',
+                        //       height: 100,
+                        //       fit: BoxFit.contain,
+                        //     ),
+                        //   ),
+                        // ),
                       ],
                     ),
                   ),

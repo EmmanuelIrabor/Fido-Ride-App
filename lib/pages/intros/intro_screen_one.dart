@@ -57,7 +57,7 @@ class IntroScreenOne extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 20.0),
               child: Text(
-                "Your city, your schedule, your ride",
+                "Your city, your schedule, your ride , all on your terms.Go anywhere, anytime, with comfort and control.",
                 style: TextStyle(color: Colors.white70, fontSize: 14),
                 textAlign: TextAlign.left,
               ),

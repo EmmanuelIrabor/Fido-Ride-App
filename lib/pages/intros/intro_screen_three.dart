@@ -30,7 +30,7 @@ class IntroScreenThree extends StatelessWidget {
                 child: Transform.translate(
                   offset: const Offset(0, -50),
                   child: Image.asset(
-                    'assets/images/intro_car_three.png',
+                    'assets/images/two_buses.png',
                     width: 600,
                     height: 600,
                     fit: BoxFit.contain,
@@ -71,7 +71,7 @@ class IntroScreenThree extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 20.0),
               child: Text(
-                "No destinaation is out of reach",
+                "No destination is out of reach.Every city, every stop, every journey , we make it possible.",
                 style: TextStyle(color: Colors.white70, fontSize: 14),
                 textAlign: TextAlign.left,
               ),
